@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {movieActions} from "../../redux";
 
 import './MoviesPage.css'
-import {Genres, Loader, MoviesCards} from "../../components";
+import {Genres, Loader, MoviesCards, SiteDesc} from "../../components";
 
 export const MoviesPage = () => {
     const {movies, loading} = useSelector(state => state.movies);
@@ -22,6 +22,7 @@ export const MoviesPage = () => {
                     : <>
                         <Genres/>
                         <MoviesCards movies={movies}/>
+                        <SiteDesc/>
                       </>
             }
         </div>
