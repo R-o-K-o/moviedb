@@ -1,0 +1,13 @@
+.navbar {
+    padding: 10px 60px 12px;
+    background-color: rgba(10,10,10,0.8);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #168c8c;
+    letter-spacing: .2em;
+}
+
+.burger {background-color: #565151;}

@@ -1,0 +1,9 @@
+.card {background-color: #161616;}
+
+.movie-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #9f9f9f;
+}
+
+.movie-title:hover{color: #ca563f;}

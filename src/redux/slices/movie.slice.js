@@ -15,6 +15,14 @@ const getAll = createAsyncThunk(
     }
 );
 
+const search = createAsyncThunk(
+    'movieSlice/search',
+    async ({query}) => {
+        const {data} = await movieService.searchMovie(query);
+        return data;
+    }
+);
+
 const movieSlice = createSlice({
     name: 'movieSlice',
     initialState,
@@ -26,6 +34,10 @@ const movieSlice = createSlice({
                 state.movies = results;
                 state.loading = false;
             })
+            .addCase(search.fulfilled, (state, action) => {
+                const {results} = action.payload;
+                state.movies = results;
+            })
     }
 });
 
@@ -33,6 +45,7 @@ const {reducer: movieReducer} = movieSlice;
 
 const movieActions = {
     getAll,
+    search,
 };
 
 export {movieReducer, movieActions};

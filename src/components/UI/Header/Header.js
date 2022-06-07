@@ -1,7 +1,9 @@
+import {Navigate} from "../Navigate/Navigate";
+
 export const Header = () => {
     return (
         <header>
-            Header
+            <Navigate/>
         </header>
     );
 };

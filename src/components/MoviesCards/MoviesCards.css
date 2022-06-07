@@ -4,13 +4,3 @@
     grid-gap: 5px;
     justify-content: center;
 }
-
-.card a {
-    color: lightgray;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.card-footer:hover{
-    color: #ca563f;
-}
