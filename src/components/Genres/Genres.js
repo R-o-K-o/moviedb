@@ -6,9 +6,10 @@ import {genreActions, movieActions} from "../../redux";
 import './Genres.css';
 import {Genre} from "../Genre/Genre";
 
-export const Genres = () => {
+export const Genres = ({movieGenres}) => {
     const {genres} = useSelector(state => state.genres);
     const dispatch = useDispatch();
+    const genresList = !movieGenres ? genres : movieGenres;
 
     useEffect(() => {
         dispatch(genreActions.getAll());
@@ -20,7 +21,7 @@ export const Genres = () => {
         <div className="mb-4 row mt-3">
             <div className="col">
                 <ul className="list-inline">
-                    {genres.map(genre =>
+                    {genresList.map(genre =>
                         <Genre key={genre.id}
                                genre={genre}
                                moviesByGenre={moviesByGenre}

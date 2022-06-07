@@ -4,6 +4,7 @@ export const SiteDesc = () => {
     return (
         <>
             <hr className="mt-5" style={{borderTop: '3px solid #9f9f9f'}}/>
+
             <div className="row justify-content-between">
                 <div className="col-md-6 col-sm-6">
                     <h3 className="site-deck-title">ABOUT ME</h3>
@@ -59,7 +60,7 @@ export const SiteDesc = () => {
                                 <strong>
                                     <i className="fas fa-map-marker-alt">
                                     </i> Phone:
-                                </strong> +3 8(098) 000 00 00
+                                </strong> +3 8( 098 ) 000 00 00
                             </p>
                         </li>
                         <li>

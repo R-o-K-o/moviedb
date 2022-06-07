@@ -1,6 +1,7 @@
 .navbar {
-    padding: 10px 60px 12px;
-    background-color: rgba(10,10,10,0.8);
+    padding: 6px 60px;
+    background-color: rgba(49, 49, 40, 0.89);
+    /*background-color: rgba(47, 18, 58, 0.89);*/
 }
 
 .logo {

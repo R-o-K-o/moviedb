@@ -1,7 +1,7 @@
+import './NotFoundPage.css'
+
 export const NotFoundPage = () => {
     return (
-        <div>
-            NotFoundPage
-        </div>
+        <h1 className="not-page">not found page</h1>
     );
 };

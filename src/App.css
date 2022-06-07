@@ -17,3 +17,11 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background: url("https://www.rabstol.net/uploads/gallery/main/486/rabstol_net_the_avengers_15.jpg") no-repeat center center fixed;
 }
+
+
+.container {
+  width: 100%;
+  margin: 1.5em auto;
+  padding: 5px 30px 30px;
+  background-color: rgba(10, 10, 10, 0.91);
+}

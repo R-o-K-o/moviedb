@@ -15,7 +15,7 @@ export const MoviesPage = () => {
     }, []);
 
     return (
-        <div className="container">
+        <div className="container" style={{minHeight: '100vh'}}>
             {
                 loading
                     ? <Loader/>

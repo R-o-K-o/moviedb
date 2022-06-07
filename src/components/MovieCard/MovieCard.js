@@ -6,7 +6,7 @@ import {Poster} from "../Poster/Poster";
 export const MovieCard = ({movie: {id, title, poster_path}}) => {
     return (
         <div className="card table-hover mb-4 mx-lg-2">
-            <Link to={`movie/:${id}`}>
+            <Link to={`/movie/${id}`}>
                 <Poster poster_path={poster_path}
                         title={title}
                         css={"card-img-top"}
