@@ -1,0 +1,14 @@
+.list-inline-item .btn-outline-info {
+    color: #787e8a;
+    border: 1px solid #787e8a;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.list-inline-item .btn-outline-info:hover{
+    color: #ca563f;
+    border-color: #ca563f;
+    background-color: transparent;
+    transition: all 0.3s  ease-in-out;
+}

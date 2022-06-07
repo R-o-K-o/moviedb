@@ -4,14 +4,14 @@ import {useDispatch, useSelector} from "react-redux";
 import {movieActions} from "../../redux";
 
 import './MoviesPage.css'
-import {Loader, MoviesCards} from "../../components";
+import {Genres, Loader, MoviesCards} from "../../components";
 
 export const MoviesPage = () => {
     const {movies, loading} = useSelector(state => state.movies);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(movieActions.getAll());
+        dispatch(movieActions.getAll({}));
     }, []);
 
     return (
@@ -19,7 +19,10 @@ export const MoviesPage = () => {
             {
                 loading
                     ? <Loader/>
-                    : <MoviesCards movies={movies}/>
+                    : <>
+                        <Genres/>
+                        <MoviesCards movies={movies}/>
+                      </>
             }
         </div>
     );
