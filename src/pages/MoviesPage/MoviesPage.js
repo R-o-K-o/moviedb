@@ -23,8 +23,14 @@ export const MoviesPage = () => {
                     ? <Loader/>
                     : <>
                         <Genres/>
-                        <MoviesCards movies={movies}/>
-                        <Pagination prevPage={prevPage} nextPage={nextPage}/>
+                        {
+                            movies.length
+                                    ? <>
+                                        <MoviesCards movies={movies}/>
+                                        <Pagination prevPage={prevPage} nextPage={nextPage}/>
+                                      </>
+                                    : <h1 style={{fontWeight: 700, textAlign: 'center', color: "#a63f2c"}}>Non Found</h1>
+                        }
                         <SiteDesc/>
                       </>
             }
