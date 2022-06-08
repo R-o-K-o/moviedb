@@ -2,7 +2,7 @@ import {Modal, ModalBody, ModalHeader, ModalTitle} from "react-bootstrap";
 import YouTube from "react-youtube";
 import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
 
-export const MoviePlayerModal = ({video, movieTitle, isOpen, setIsOpen}) => {
+export const MoviePlayerModal = ({videoKey, movieTitle, isOpen, setIsOpen}) => {
     return (
         <Modal
             show={isOpen}
@@ -21,7 +21,7 @@ export const MoviePlayerModal = ({video, movieTitle, isOpen, setIsOpen}) => {
             </ModalHeader>
             <ModalBody style={{backgroundColor: '#000'}}>
                 <YouTube
-                    videoId={video.key}
+                    videoId={videoKey}
                     iframeClassName={"container"}
                 />
             </ModalBody>

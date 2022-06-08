@@ -13,6 +13,7 @@ export const MovieTrailer = ({movieId, moviePoster, movieTitle}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [loading, setLoading] = useState(true);
 
+
     useEffect(() => {
         movieService.getTrailer(movieId).then(({data: {results}}) => {
             setVideo(results[0]);

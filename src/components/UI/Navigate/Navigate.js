@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import {Container, Nav, Navbar} from "react-bootstrap";
 
@@ -12,7 +12,7 @@ export const Navigate = () => {
     const [query, setQuery] = useState('');
     const dispatch = useDispatch();
 
-    const searchMovie = async (e) => {
+    const searchMovie = (e) => {
         e.preventDefault();
         if (query) {
             dispatch(movieActions.search({query}));

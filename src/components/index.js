@@ -11,5 +11,6 @@ export * from './MovieCast/MovieCast';
 export * from './SearchForm/SearchForm';
 export * from './UserInfo/UserInfo';
 export * from './SiteDesc/SiteDesc';
+export * from './Pagination/Pagination';
 
 export * from './UI';
